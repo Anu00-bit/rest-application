@@ -1,5 +1,9 @@
 package com.project.store.dtos;
 
-public class CartItemDto {
+import java.math.BigDecimal;
 
+public class CartItemDto {
+private long id;
+private String name;
+private BigDecimal price;
 }
