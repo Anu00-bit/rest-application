@@ -1,9 +1,12 @@
 package com.project.store.dtos;
 
+import lombok.Data;
+
 import java.math.BigDecimal;
 
+@Data
 public class CartItemDto {
-private long id;
-private String name;
-private BigDecimal price;
+    private CartProductDto product;
+private int quantity;
+private BigDecimal totalPrice;
 }
